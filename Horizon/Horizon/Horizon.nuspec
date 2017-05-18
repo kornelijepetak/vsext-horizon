@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>VSHorizon</title>
+    <authors>Kornelije Petak</authors>
+    <owners>Kornelije Petak</owners>
+    <licenseUrl>https://github.com/kornelijepetak/vsext-horizon/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kornelijepetak/vsext-horizon</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Helper classes with Visual Studio extension development</description>
+    <releaseNotes>Added ability to retrieve options DialogPages through Settings class.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>VisualStudio Extensions Extensibility Development Plugin Addon Addin Horizon</tags>
+  </metadata>
+</package>

@@ -7,33 +7,15 @@ using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 
-namespace Horizon
+namespace Horizon.Settings
 {
-	public class Setting<T>
-	{
-		private string path;
-
-		public Setting(string path)
-		{
-			this.path = path;
-		}
-
-		public T Value
-		{
-			get
-			{
-				return Settings.GetValue<T>(path);
-			}
-			set
-			{
-				Settings.SetValue(path, value);
-			}
-		}
-
-	}
-
 	public static class Settings
 	{
+		public static T OptionsPage<T>(this Package package) where T : DialogPage
+		{
+			return package.GetDialogPage(typeof(T)) as T;
+		}
+
 		public static T GetValue<T>(string path, T defaultValue = default(T))
 		{
 			try
